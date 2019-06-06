@@ -14,6 +14,6 @@ class MealPreparation extends TimerTask {
 
     @Override
     public void run() {
-        kitchen.mealIsReady(beeper);
+        kitchen.mealReady(beeper);
     }
 }
