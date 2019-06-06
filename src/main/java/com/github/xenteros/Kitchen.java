@@ -8,6 +8,9 @@ class Kitchen {
 
    private Manager manager;
 
+   public Kitchen() {
+   }
+
    public void prepareMeal(Beeper beeper) {
       MealPreparation mealPreparation = new MealPreparation(this, beeper);
       Timer timer = new Timer();
@@ -18,7 +21,7 @@ class Kitchen {
       System.out.println("I'm back " + beeper.getOrderName());
    }
 
-
-
-
+   public void setManager(Manager manager) {
+      this.manager = manager;
+   }
 }

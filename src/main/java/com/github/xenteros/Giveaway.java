@@ -9,6 +9,10 @@ class Giveaway {
     }
 
     public void customerCollectedOrder(Beeper beeper) {
-        
+
+    }
+
+    public void setManager(Manager manager) {
+        this.manager = manager;
     }
 }
