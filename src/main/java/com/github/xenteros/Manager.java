@@ -12,23 +12,24 @@ class Manager {
         this.giveaway = giveaway;
     }
 
-    private void newOrder(String orderName) {
+    public void newOrder(String orderName) {
+        Beeper beeper = new Beeper(orderName);
+        prepareMeal(beeper);
+    }
+
+    public void prepareMeal(Beeper beeper) {
+        kitchen.prepareMeal(beeper);
+    }
+
+    public void mealReady(Beeper beeper) {
 
     }
 
-    private void prepareMeal(Beeper beeper) {
+    public void callCustomer(Beeper beeper) {
 
     }
 
-    private void mealReady(Beeper beeper) {
-
-    }
-
-    private void callCustomer(Beeper beeper) {
-
-    }
-
-    private void customerCollectedOrder(Beeper beeper) {
+    public void customerCollectedOrder(Beeper beeper) {
 
     }
 

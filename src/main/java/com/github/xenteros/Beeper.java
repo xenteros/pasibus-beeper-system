@@ -17,6 +17,10 @@ class Beeper {
         createdAt = LocalDateTime.now();
     }
 
+    public String getOrderName() {
+        return orderName;
+    }
+
     @Override
     public int hashCode() {
         return Objects.hashCode(this.uuid);
