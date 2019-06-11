@@ -1,5 +1,6 @@
 package com.github.xenteros;
 
+import java.time.LocalDateTime;
 import java.util.TimerTask;
 
 class MealPreparation extends TimerTask {

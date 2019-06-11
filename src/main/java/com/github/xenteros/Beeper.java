@@ -37,4 +37,12 @@ class Beeper {
         }
         return false;
     }
+
+    public void setCalledAt(LocalDateTime calledAt) {
+        this.calledAt = calledAt;
+    }
+
+    public void setCollectedAt(LocalDateTime collectedAt) {
+        this.collectedAt = collectedAt;
+    }
 }

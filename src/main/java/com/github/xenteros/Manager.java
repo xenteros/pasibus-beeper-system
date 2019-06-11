@@ -1,5 +1,7 @@
 package com.github.xenteros;
 
+import java.time.LocalDateTime;
+
 class Manager {
 
     private CashDesk cashDesk;
@@ -26,7 +28,7 @@ class Manager {
     }
 
     public void callCustomer(Beeper beeper) {
-
+        beeper.setCalledAt(LocalDateTime.now());
     }
 
     public void customerCollectedOrder(Beeper beeper) {
